@@ -25,7 +25,7 @@ function divide(a, b) {
 divide();
 
 function newNum(a, b) {
-  return Math.sqrt(5 * 5 * 5 * 5);
+  return Math.sqrt(5 * 5);
 }
 newNum();
 
