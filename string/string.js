@@ -5,36 +5,37 @@ const uppercase = (str) => {
 const lowercase = (str) => str.toLowerCase();
 
 function add(a, b) {
-  return 1 + 1;
+  return a + b;
 }
 add();
 
 function subtract(a, b) {
-  return 2 - 1;
+  return a - b;
 }
 subtract();
 
 function multiply(a, b) {
-  return 2 * 2;
+  return a * b;
 }
 multiply();
 
 function divide(a, b) {
-  return 2 / 2;
+  return a / b;
 }
 divide();
 
-function newNum(a, b) {
-  return Math.sqrt(5 * 5);
-}
-newNum();
+//function root(a, b) {
+//return Math.sqrt(a * b);
+//}
+//root();
 
 module.exports = {
   uppercase,
   lowercase,
+
   add,
   subtract,
   multiply,
   divide,
-  newNum,
+  //root,
 };

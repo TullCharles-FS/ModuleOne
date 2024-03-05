@@ -5,7 +5,7 @@ const {
   subtract,
   multiply,
   divide,
-  newNum,
+  //root,
 } = require("./string");
 
 describe("Testing the string module", () => {
@@ -16,18 +16,18 @@ describe("Testing the string module", () => {
     expect(lowercase("FULL Sail")).toBe("full sail");
   });
   test("should add numbers", () => {
-    expect(add(1 + 1)).toBe(2);
+    expect(add(3, 6)).toBe(9);
   });
   test("should subtract numbers", () => {
-    expect(subtract(2 - 1)).toBe(1);
+    expect(subtract(4, 3)).toBe(1);
   });
   test("should multiply numbers", () => {
-    expect(multiply(2 * 2)).toBe(4);
+    expect(multiply(2, 2)).toBe(4);
   });
   test("should divide numbers", () => {
-    expect(divide(2 / 2)).toBe(1);
+    expect(divide(2, 2)).toBe(1);
   });
-  test("should return square root", () => {
-    expect(newNum(5 * 5 * 5 * 5)).toBe(5);
-  });
+  //test("should return square root", () => {
+  // expect(root(5 * 5)).toBe(5);
+  // });
 });
